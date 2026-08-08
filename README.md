@@ -1,5 +1,10 @@
 # Environment
 
+Video: [Watch this lesson](https://www.youtube.com/playlist?list=PLcefVHICSaCM)
+
+For this module, all you need is Python with Jupyter.
+
+
 ## Prerequisites
 
 You need the following:
