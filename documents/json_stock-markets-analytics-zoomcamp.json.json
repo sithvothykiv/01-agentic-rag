@@ -1,0 +1,653 @@
+[
+  {
+    "id": "b043d949b7",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Do I need to pay for any platform or data for this course?",
+    "answer": "No. All the data sources used in the course (yfinance, pandas_datareader, web scraping) are free, and you do not need a paid GCP account or any other paid service. You are welcome to use paid data if you want, but it is not required."
+  },
+  {
+    "id": "6f669a2215",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Do I need a finance background to take this course?",
+    "answer": "It helps, but you can start without one - though \"no finance experience needed\" turns out to be a bit optimistic, and you will need to read up on terms as you go. Good free resources: Investopedia for definitions, ChatGPT for explanations, Khan Academy's economics-finance course, and Zerodha Varsity. Take it one concept at a time rather than trying to learn everything at once."
+  },
+  {
+    "id": "7bfc53f542",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "My Python or Pandas skills feel too weak for the course. How can I improve?",
+    "answer": "Learn by doing, and lean into vectorized Pandas (avoid row-by-row loops like iterrows). Useful resources: the official Pandas cheat sheet, the Pandas time-series getting-started guide, the Kaggle Time Series course, 30-Days-of-Python, and \"Effective Python\". The key skills are fetching/scraping data, working with DataFrames and Series, and handling time-series data."
+  },
+  {
+    "id": "90062f321b",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Can I use Excel instead of Python and notebooks?",
+    "answer": "Not really. The course works with 100k+ rows and needs programming for prediction, simulation, and reproducibility, so Excel quickly becomes impractical. If you are new to Python, consider a Python-for-data-analysts course that covers Pandas properly alongside this one."
+  },
+  {
+    "id": "e5c6668dbd",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "What books do you recommend for the course?",
+    "answer": "See the supplementary pre-read section in the repo README. For a gentle start, \"Paul Wilmott Introduces Quantitative Finance\". For rigorous math: Shiryaev's \"Essentials of Stochastic Finance\", Shreve's \"Stochastic Calculus for Finance\", and Wilmott's \"Derivatives\"."
+  },
+  {
+    "id": "01bf6df31b",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "How much time does the course take?",
+    "answer": "Based on participant feedback, the average time to reach the first project attempt is roughly 20-30 hours, depending on your background and how deep you go."
+  },
+  {
+    "id": "0866dcac1e",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Will the course provide starter or boilerplate code to build on?",
+    "answer": "Yes. Each module ends with a Colab notebook containing the code and data, which you can copy and run straight away. It gives you enough boilerplate to start building and tweaking your own strategy."
+  },
+  {
+    "id": "b7e18ac122",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "What tech stack does the course use?",
+    "answer": "Nothing fancy: Google Colab for most of the work, and VS Code with Python once you move to automation in Module 5. The course explains the Python it uses and doesn't go beyond that."
+  },
+  {
+    "id": "90dc81f376",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does the course cover news and sentiment analysis, and can LLMs generate trading signals?",
+    "answer": "News and sentiment are hard to use in practice: long news history usually requires paid sources (e.g. polygon.io), news is published too late to act on, and source reliability is uncertain. The instructor uses LLMs for news summarization but hasn't found a way to turn them into stable, reliable trading signals. Portfolio optimization is only lightly touched (when combining several predictions into a portfolio). You're welcome to experiment with news/LLMs in your project - see the blog articles at pythoninvest.com/blog."
+  },
+  {
+    "id": "c95ce6566b",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does the approach work for crypto, forex, ETFs and other assets, or only stocks?",
+    "answer": "The course focuses on the biggest US stocks, but the same approach works for any time-series prices - crypto, forex, commodities, ETFs and non-US stocks - though you may need different data sources and models. Futures, options and other derivatives are harder: good historical data is scarce and usually expensive, and you may need extra features."
+  },
+  {
+    "id": "f6cae4f09b",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Do I need to know statistics or have trading experience?",
+    "answer": "Not much. The only hard requirement is Python plus an analytical mindset. No deep financial-market or trading knowledge is needed; only basic distributions and simple statistical models are shown, without explaining everything under the hood."
+  },
+  {
+    "id": "cd627dc856",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Will this course make me a profitable trader or help me get rich quickly?",
+    "answer": "No guarantees. It's not a get-rich-quick course - building a consistently profitable trading bot is very hard and there are no profitability guarantees. The course is a strong step toward building one, and to trade meaningfully you also need your own capital."
+  },
+  {
+    "id": "29624dbc59",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Will I have enough skills to start my own analysis and invest as a beginner?",
+    "answer": "Yes, enough to start. The Colab notebooks are designed so you can copy one, run it under your own credentials and adjust the parameters, markets or companies - which makes it much easier to start from scratch."
+  },
+  {
+    "id": "365688f181",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does the course cover technical and fundamental analysis?",
+    "answer": "Yes, on the practical side: it shows how to generate technical indicators from API data and a few fundamental features (e.g. earnings per share). The catch is that long-history fundamental data isn't easily available for free, so you may need to pay or script your way to a longer history."
+  },
+  {
+    "id": "dc0d83d8cc",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "What returns has the instructor achieved with algorithmic trading?",
+    "answer": "About a 40% return over two-to-three months during a booming market (vs ~10-15% market growth), day-trading around 20% of his portfolio with ~200 factors and selling about a week after buying. He didn't track the Sharpe ratio, roughly a third of the returns were eaten by commissions, and the strategy later started losing money and was shut down. He generally doesn't comment on the current performance of his own strategies."
+  },
+  {
+    "id": "e9e1f4d1f7",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Do I need to open a broker account to take the course?",
+    "answer": "No, it's not required for the course. You only need a broker account if you actually want to place real trades."
+  },
+  {
+    "id": "20f09abce3",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Which broker should I use - Revolut, Charles Schwab or Interactive Brokers?",
+    "answer": "For the course it makes no difference which broker you use. Banking apps like Revolut only offer a handful of stocks, so they're limiting if you want rare, small/mid-cap or non-US stocks; a dedicated broker (Schwab, Interactive Brokers, etc.) gives you far more markets. Compare interfaces, fees and available markets and pick what suits you."
+  },
+  {
+    "id": "72e01504df",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Is there a valid certificate of completion?",
+    "answer": "Yes - a PDF certificate with your name and a signature. It's not a university credential, but your projects are public, so traders or analysts can judge your work directly from the evidence."
+  },
+  {
+    "id": "ddcd94b468",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does the course focus only on short-term trading, or also long-term investing?",
+    "answer": "You can design any strategy and time horizon you want, from one hour to ten years ahead. A medium-term strategy is suggested because it's easier to simulate. High-frequency / seconds-level trading and streaming aren't covered, and the course doesn't recommend any particular strategy type."
+  },
+  {
+    "id": "c3c3ae13e8",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "What is a quant?",
+    "answer": "A quant is a quantitative analyst or researcher - a professional market participant who works in the financial-trading industry, typically at a small number of highly profitable, well-known firms."
+  },
+  {
+    "id": "11e78ecf10",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "How expensive are trading commissions, and won't frequent trading rack them up?",
+    "answer": "Yes - more trades mean more commissions, so there's a real trade-off. Commissions vary by broker and exchange but are typically around half a dollar/euro to one dollar per contract. In the instructor's 40% experience about a third of the returns were eaten by commissions, so limit trades and focus on high-confidence deals."
+  },
+  {
+    "id": "231a3f0f05",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Is there a disclaimer about financial losses from trading?",
+    "answer": "Yes. The instructors are not professional market participants and are not liable for any losses, and there are no profitability guarantees. The course teaches how to do algorithmic trading but never tells you what or when to buy or sell."
+  },
+  {
+    "id": "493a28420b",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Can I use the course for non-US markets, such as Indian stocks?",
+    "answer": "Yes, any market. The course focuses on the biggest US stocks because that's what the instructor follows, but Yahoo Finance covers ~8,000 stocks across many markets. You can build a project focused only on Indian (or other local) stocks; when predicting across markets you may want to convert positions into a common currency such as USD."
+  },
+  {
+    "id": "eef043a042",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "If the efficient market hypothesis says you can't beat the market, how does the course deal with that?",
+    "answer": "There are no guarantees you'll beat the market, but retail investors, mutual funds and hedge funds all participate regularly. The course focuses on growth relative to a benchmark, so you define your own benchmark (local market, global market, asset class, or a personal target), do risk management, measure whether you beat it, and stop when you don't see profits."
+  },
+  {
+    "id": "b8c4d94988",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "How much math do I need to know?",
+    "answer": "General education-level math is enough. Linear algebra, probability theory and statistics become useful if you want to understand the ML predictions more deeply or build more complex models and simulations."
+  },
+  {
+    "id": "e5a8bd982a",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Can you share references for the theoretical concepts behind the strategies?",
+    "answer": "The course only covers the practical side - analysis, coding, simulation and trading - and doesn't teach the underlying theory. The breadth is wide, so you can look up specific concepts yourself."
+  },
+  {
+    "id": "0bba7f27c2",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does the instructor use named technical-analysis strategies (e.g. ICT/SMC, trend lines, divergence)?",
+    "answer": "No - he doesn't consider himself a technical trader and doesn't use those strategies directly, but they're great choices for your capstone project. Technical indicators are used as input features to the ML models, so such strategies are embedded indirectly. Approaches like ICT are essentially visual chart analysis; you could in principle train a model on chart images, but that needs huge image datasets and gives results similar to using technical indicators as features."
+  },
+  {
+    "id": "06facfe0a0",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does the course follow the existing PythonInvest basic financial analysis repo?",
+    "answer": "Not directly - the course content is new. But it references published PythonInvest articles, and the code for almost all of those articles lives in that repo, so it's a useful companion."
+  },
+  {
+    "id": "73ccaee249",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "What are the latest ML research topics for the stock market, and does the course use research papers?",
+    "answer": "The course doesn't use or cover academic research. The instructor finds papers are often hard to reproduce (code isn't shared, value is questionable) and you can spend a month replicating one for little gain. If you find something you can replicate, use it in your project and share it."
+  },
+  {
+    "id": "3be2bd2c2b",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Do I need a GPU (e.g. a Colab GPU) for this course?",
+    "answer": "No. The course uses less compute-intensive models and emphasizes simulation over heavy ML. You'd only need a GPU if you chose to train a large neural network, mainly to speed it up."
+  },
+  {
+    "id": "e4b0f56848",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Is classic financial modeling (e.g. discounted cash flows) covered?",
+    "answer": "No. Predicting a company's fair value via DCF isn't covered. Financial statements matter but are hard to get over long periods - free sources typically give only ~4 years - so you can build on four-to-five years of data to see if it works."
+  },
+  {
+    "id": "265f497dea",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Where can I find the course repo with the slides and code?",
+    "answer": "The repo link is shared in nearly every announcement via Telegram, Slack and email - use that link for the slides and code."
+  },
+  {
+    "id": "caa21bebd2",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Are the lectures recorded, and where are the playlists?",
+    "answer": "Yes, all lectures are live-streamed and recorded on the PythonInvest YouTube channel. There are separate playlists for the current year and the previous year."
+  },
+  {
+    "id": "3a111b38f1",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "How should I prepare alongside the course to land a quant job?",
+    "answer": "The course won't directly land you a quant role, but it helps your portfolio. Quant firms value real-life experience (e.g. trading your own money) and run multi-stage hiring competitions testing math speed, cooperation and soft skills."
+  },
+  {
+    "id": "e58c29db25",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Do I need to know time series before starting?",
+    "answer": "Helpful but not necessary. The instructor covered time series in the 'Predicting Financial Time-Series' workshop (downloading, analyzing, extracting trends and forecasting). Forking and running that project is the best way to pick up what you need."
+  },
+  {
+    "id": "3cb625f92a",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does this course overlap with the MLOps Zoomcamp, and can I do both while working full-time?",
+    "answer": "It's possible but hard. Students spent roughly 10-15 hours/week here (~4 on lectures, 5+ on homework); doing both on top of a 40-hour job means ~20-30 extra hours a week. The materials have been streamlined with easier tasks and no research questions."
+  },
+  {
+    "id": "2c26baf6bd",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does the course focus on analytics, predictions or coding?",
+    "answer": "Both analytics and predictions, assuming you can already do the (relatively simple) coding - no OOP or complex data structures required. It targets intermediate-to-advanced programming/analytics skills and beginner-level trading skills."
+  },
+  {
+    "id": "bbf72858d3",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Can I start now or should I wait for the official launch?",
+    "answer": "You can start now by going through last year's GitHub repo (recordings, slides, homeworks, code). About 80% of the materials stay the same, so reviewing them early shows you what to expect and gives you time to brush up on Python/Pandas before the launch."
+  },
+  {
+    "id": "de0752307c",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Will the course teach how to analyze the impact of tariffs on markets?",
+    "answer": "No - it's not an economics course, and tariffs get very complicated. Instead you can add specific country/sector indexes, or proxies like trade balance and exchange rates, as features."
+  },
+  {
+    "id": "57237525fa",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "What is the overall timeline and structure of the course?",
+    "answer": "About 2.5-3 months: five lectures (each around 1.5 hours) with two-to-three weeks between them, followed by a roughly 3-week window for the capstone project."
+  },
+  {
+    "id": "2f24011861",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "What career outcomes can I expect, and is this a good first course?",
+    "answer": "It's a practical investing course and a good portfolio project, but not the easiest one and not recommended as your very first course - it spans many topics and is fairly complex. You could finish other courses faster with simpler projects."
+  },
+  {
+    "id": "8723c83446",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Should I do the ML Zoomcamp first, and how much coding do I need?",
+    "answer": "The ML Zoomcamp (or any Zoomcamp) helps but isn't required. You just need some programming experience - finishing any Python or analytics course should be enough."
+  },
+  {
+    "id": "9fd5bae8e6",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Does building an accurate ML model actually beat simple technical-indicator rules?",
+    "answer": "The course tackles this directly: it first applies hand-written rules using specific technical indicators, then compares them against ML predictions that use those same indicators as features, so you can see whether the model adds value."
+  },
+  {
+    "id": "5ea7790727",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "Can you show an example Streamlit dashboard from the course?",
+    "answer": "Yes - two webinars (December 2024 and February 2025) demonstrated Streamlit dashboards. They're linked from the GitHub course page along with their repos, and the dashboards are likely still live."
+  },
+  {
+    "id": "fd089d0e8f",
+    "course": "stock-markets-analytics",
+    "section": "General Course-Related Questions",
+    "question": "How does the 2025 edition differ from the previous one?",
+    "answer": "It's about 80-90% the same content, but it uses a fresh year of data and all the home assignments are new."
+  },
+  {
+    "id": "a38dee16da",
+    "course": "stock-markets-analytics",
+    "section": "Module 1. Intro and Data Sources",
+    "question": "How do I handle invalid or delisted tickers in yfinance (e.g. \"No timezone found, symbol may be delisted\")?",
+    "answer": "The ticker may be delisted or may have changed symbol - check ticker changes at stockanalysis.com/actions/changes (for example PTHR became HOVR, and some need a different suffix like PTHR -> PTHRF). Also note yfinance only validates a ticker when you actually call the API (not when you create the Ticker object), so check the data you receive rather than assuming the object is valid."
+  },
+  {
+    "id": "9b53f52335",
+    "course": "stock-markets-analytics",
+    "section": "Module 1. Intro and Data Sources",
+    "question": "yf.Ticker.calendar or .financials returns \"no summary info\". What can I do?",
+    "answer": "Those endpoints are unreliable for many tickers. Try Polygon.io (it has a free tier), or scrape the values from the web - there is a PythonInvest blog article on scraping EPS that can help."
+  },
+  {
+    "id": "ef7331e2b4",
+    "course": "stock-markets-analytics",
+    "section": "Module 1. Intro and Data Sources",
+    "question": "Should I use Close or Adj.Close, and how do I get dividends?",
+    "answer": "Use Adj.Close for computing returns - it avoids the artificial price jumps on dividend dates. The old difference between Close and Adj.Close is effectively deprecated (the API now returns only Close), and for dividends you should use Yahoo Finance's dividend data rather than deriving it from the price difference."
+  },
+  {
+    "id": "49bedc376b",
+    "course": "stock-markets-analytics",
+    "section": "Module 1. Intro and Data Sources",
+    "question": "yfinance is \"for studies only\" - where do I get reliable or real-time data?",
+    "answer": "For real-time or production data, use your broker's API (a real-time data subscription is usually affordable for individual traders, and it matches the prices you actually trade at). For more sources, see Quantpedia's data-source and brokerage-API lists; for crypto, Binance has a historical data portal."
+  },
+  {
+    "id": "e947b9370e",
+    "course": "stock-markets-analytics",
+    "section": "Module 1. Intro and Data Sources",
+    "question": "Are there free stock screeners I can use?",
+    "answer": "finviz.com works without signing up. gurufocus has strong fundamental data for quick manual analysis, but its subscription and API access are not cheap, so it is less suitable for use at scale."
+  },
+  {
+    "id": "35ce5505c4",
+    "course": "stock-markets-analytics",
+    "section": "Module 1. Intro and Data Sources",
+    "question": "pandas-datareader doesn't seem to be maintained anymore - should I use a different library?",
+    "answer": "The instructor uses pandas-datareader regularly and finds the FRED data it returns is still updated daily, so it works fine for the course. If you have a better alternative, share it in Slack."
+  },
+  {
+    "id": "807e0a519b",
+    "course": "stock-markets-analytics",
+    "section": "Module 2. DataFrame Analysis",
+    "question": "How do I compute the future growth columns (growth_future_1d ... growth_future_30d) efficiently?",
+    "answer": "Use vectorized operations with .shift() rather than looping over rows. Keep in mind that stock data is business days only, so use .shift(i) (not a calendar timedelta), use Adj.Close, and account for the lag between an IPO date and the first day price data is actually available. The Module 2 notebook's loop that defines many columns at once is a good template."
+  },
+  {
+    "id": "1be7635aaf",
+    "course": "stock-markets-analytics",
+    "section": "Module 2. DataFrame Analysis",
+    "question": "ta-lib won't install on Windows. What works?",
+    "answer": "ta-lib is a C library, so a plain pip install often fails. The easiest options are: install via conda (conda install conda-forge::ta-lib), use the prebuilt wheels from cgohlke/talib-build, or implement the indicator (for example CCI) manually without the library."
+  },
+  {
+    "id": "e72b651646",
+    "course": "stock-markets-analytics",
+    "section": "Module 2. DataFrame Analysis",
+    "question": "How do I load the large parquet data file in Colab?",
+    "answer": "Either mount Google Drive and read the file from your drive, or use gdown with the --fuzzy flag to download a shared Drive link directly into the Colab session, then read it with pd.read_parquet."
+  },
+  {
+    "id": "ebc76c896b",
+    "course": "stock-markets-analytics",
+    "section": "Module 2. DataFrame Analysis",
+    "question": "After merging DataFrames I get Adj Close_x and Adj Close_y instead of Adj Close. Why?",
+    "answer": "Those are pandas merge suffixes (default _x and _y) that appear when both frames share a column name. Pass the suffixes parameter to get clearer names. The _x version is the correct value; ideally drop the merge artifacts and keep a single version of each column."
+  },
+  {
+    "id": "3b58e2f194",
+    "course": "stock-markets-analytics",
+    "section": "Module 2. DataFrame Analysis",
+    "question": "How much historical data is enough - 1, 2 or 10 years?",
+    "answer": "As a rule of thumb, use as much as you can while making sure the key features are filled in, the data is correct and reliable, and the daily transformations don't get too slow. The instructor uses about 25 years of daily data. With hourly or 15-minute data you'd use less, and for assets with short histories (e.g. Bitcoin, ~8 years) or when joining macro features you'll have far less, so a crypto project needs a different approach."
+  },
+  {
+    "id": "ffa7e2d9ae",
+    "course": "stock-markets-analytics",
+    "section": "Module 2. DataFrame Analysis",
+    "question": "Can I add fundamental analysis to the Colab notebook?",
+    "answer": "Yes. The notebook shows how to retrieve fundamental indicators, but free sources only give about four years of yearly stats, so fundamentals aren't used in the final dataframe. Earnings dates matter a lot - they can produce daily moves 10x larger than average - so embed fundamental data if you can find a longer history (and share the source in Slack if you do)."
+  },
+  {
+    "id": "1ecf8f6d71",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "My modeling DataFrame has 300+ feature columns. How do I manage that?",
+    "answer": "Expand the number of tickers rather than splitting the data into separate frames - splitting loses the relationships between technical and macro features. For large datasets, use a powerful machine with GPU-accelerated Pandas (cudf) and GPU ML implementations, since hyperparameter tuning gets heavy (that is why it is out of scope for the course). Dropping the ticker dummy variables makes the model more generic but less precise per stock."
+  },
+  {
+    "id": "cd1ed32158",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Colab disconnects during hyperparameter tuning - is Colab Pro worth it?",
+    "answer": "It can be, because it avoids disconnects and gives you more resources. If you have a powerful local machine you may not need it. One-off compute credits are a cheaper alternative to a monthly subscription if you only need the extra power occasionally."
+  },
+  {
+    "id": "af04a866cf",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "GitHub only shows part of the module notebook. Is the notebook incomplete?",
+    "answer": "No - GitHub's web preview truncates large notebooks. Open the notebook in Colab via the GitHub link, or download it and run it locally, and you will see the full content."
+  },
+  {
+    "id": "ee78d7334a",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "What baseline (unconditional win rate) are the models compared against?",
+    "answer": "The baseline is a constant prediction that always assumes the stock will go up, so you always decide to buy. The unconditional win rate is the percentage of days when the price was higher one or three days later - effectively a coin flip repeated many times. A model's win rate is compared against this baseline to see whether it actually outperforms the market."
+  },
+  {
+    "id": "ac9288e96d",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "How did you choose the ARIMA parameters (2,1,2) - cross-validation or common sense?",
+    "answer": "Mostly common sense: the differencing term (I) had to be greater than zero because the series has a growing trend and the model won't converge on non-stationary data, and the AR and MA orders were kept small to avoid overfitting. There is an auto-ARIMA implementation for automatic selection, but it needs additional statistical tests and is more complicated to do properly."
+  },
+  {
+    "id": "9ee8c4d62f",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Should I use SARIMA / SARIMAX (seasonal ARIMA) instead?",
+    "answer": "The state-of-the-art implementation is SARIMAX, which adds a seasonal component. The lecture used classic ARIMA but with exogenous regressors that already capture some seasonal parameters (like day of week), so it partly replicates SARIMAX. You're welcome to try SARIMA/SARIMAX as well."
+  },
+  {
+    "id": "b296182a36",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Why did the simple ARIMA model outperform the market on the test set - was it just luck?",
+    "answer": "Largely luck. The model trained on a period of high growth, so its coefficients heavily weight recent upward movements and it over-predicts growth, which happened to match the very strong last few years. The instructor considers this outperformance suspicious rather than a sign of a genuinely good model."
+  },
+  {
+    "id": "b230179013",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Would you actually use this ARIMA model in production for real trading?",
+    "answer": "No. It underperforms on train/validation and is only positive on test by chance, meaning it's too simple to predict real movements. The instructor would first improve it (automatic parameter selection, more regressors) so the outperformance is consistently above zero before trusting it. It's still useful as an illustrative baseline."
+  },
+  {
+    "id": "8d6a161b65",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Should I build one model per stock, or a single model covering all stocks?",
+    "answer": "It's a hard, open question with no clear answer. A deep neural network tends to generalize better with more data (e.g. 50-100 tickers giving a million rows instead of a few thousand), but a model trained on a single stock may work better specifically for that stock. Try both and compare."
+  },
+  {
+    "id": "9197b44021",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Should I use very old data (back to 1999) or only the last few years?",
+    "answer": "It's a trade-off and a matter of belief: if you think markets haven't changed much, include more data since it's easier to train; for things like crypto or recent micro-factors you may not have that history. The real answer is to try both and see which works better on your statistical (e.g. RMSE) or trading metrics."
+  },
+  {
+    "id": "d9ee61b528",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "What happens if I combine the models into an ensemble (e.g. averaging predictions)?",
+    "answer": "Ensembles generally improve stability and accuracy because different models do better in different periods. You can combine several predictions (by maximum, average, or another method) into a fourth 'super-model' line and compute the same metrics (RMSE, win rate, market outperformance) to check whether it performs better."
+  },
+  {
+    "id": "445dee8dd6",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "We train a regression model and use it like a classifier - can I train a classifier directly (buy / don't buy) instead?",
+    "answer": "Yes, and last year's course focused on classification; this is just a different type. Classification is generally easier to build and explain, but regression is more powerful because it predicts the magnitude of growth (1% vs 5% vs 10%) and gives confidence intervals, so you can base your strategy on the whole interval rather than a single point estimate."
+  },
+  {
+    "id": "5d23f80965",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Did you try XGBoost with lagged features for time-series prediction?",
+    "answer": "The instructor tried it once but isn't very experienced with it. It's very powerful (it won many Kaggle competitions) and should be easier than training a deep neural network. By default it's a black box, but you can add explainability with libraries like SHAP. A pull request with an XGBoost notebook that beats the other models is welcome."
+  },
+  {
+    "id": "ace618463e",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Did you try TimeGPT or LSTM for time-series prediction?",
+    "answer": "The instructor tried LSTM but not TimeGPT. He stresses the specific tool isn't that important - feature engineering and understanding external factors and the market state matter most - and encourages you to try these tools on the same data and share your notebooks."
+  },
+  {
+    "id": "39c1c0a561",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "Why can't I reproduce the exact predictions for homework 3 question 3?",
+    "answer": "The model must be trained with the same random seed. Set random_state=42 (the same value the instructor uses) so the trees train identically and you get the same results."
+  },
+  {
+    "id": "f88ef2e8ba",
+    "course": "stock-markets-analytics",
+    "section": "Module 3. Modeling",
+    "question": "I skipped homework 3 questions 3 and 4 because I lack advanced statistics - were they really about statistics?",
+    "answer": "No, they weren't really about statistics (though some ML and distribution principles are involved). You're expected to read through the provided code, which builds on the earlier Colab notebook - copy it, run it, and change pieces - rather than write it from scratch."
+  },
+  {
+    "id": "c84ca86bdb",
+    "course": "stock-markets-analytics",
+    "section": "Module 4. Trading Strategy and Simulation",
+    "question": "Does the trained model require trading the exact same set of stocks in production?",
+    "answer": "Yes - the model assumes the set of stocks it was trained on. It will still work on other stocks, just less accurately (ticker dummies are usually not among the strongest factors). The recommendation is to include all the stocks you actually want to invest in when you train, and to compare the train/test/validation distributions of your outcome and features."
+  },
+  {
+    "id": "fca91fa9b2",
+    "course": "stock-markets-analytics",
+    "section": "Module 4. Trading Strategy and Simulation",
+    "question": "Should the trading simulation buy at the next day's open or at the close?",
+    "answer": "It depends on your trading workflow. If you decide on trades before the market opens, you only know the previous Close, so you trade on Close. If you trade after the market opens, redefine the growth variables on the Open prices (with the correct shift/lag) so the simulation reflects what you can actually execute. Be careful with realtime data lag (free sources like yfinance can lag 15-20 minutes)."
+  },
+  {
+    "id": "0edc35a876",
+    "course": "stock-markets-analytics",
+    "section": "Module 4. Trading Strategy and Simulation",
+    "question": "Do we optimize returns pre-tax or after-tax, and can I include tax in my strategy?",
+    "answer": "By default the course optimizes pre-tax profit and doesn't model tax, but you can build your own tax scheme into a strategy. Examples the instructor gives: Ireland's 33% capital-gains tax on stocks/crypto vs 42% on ETFs, annual tax-free allowances (EUR 1,270 in Ireland, GBP 6,000 in the UK), and the UK's 30-day share-matching rule."
+  },
+  {
+    "id": "1dc8f8f684",
+    "course": "stock-markets-analytics",
+    "section": "Module 4. Trading Strategy and Simulation",
+    "question": "What practical trading scenarios does the simulation module cover?",
+    "answer": "Long strategies, short strategies, single-sector analysis, stocks and options, and dividend strategies. There won't be many (roughly one to three) - the goal is to learn the principle of experimenting and evaluating results so you can expand on your own."
+  },
+  {
+    "id": "d4695c1619",
+    "course": "stock-markets-analytics",
+    "section": "Module 5. Deployment and Automation",
+    "question": "Why does the deployment use Digital Ocean instead of AWS?",
+    "answer": "The instructor started with Digital Ocean years ago and it has always been enough. You are welcome to fork the repo, deploy on AWS, and send a pull request with the AWS instructions."
+  },
+  {
+    "id": "3c4e52e42f",
+    "course": "stock-markets-analytics",
+    "section": "Module 5. Deployment and Automation",
+    "question": "Can the free data sources handle high request rates (e.g. 1000 calls per minute)?",
+    "answer": "No. Free data sources are not meant for that volume and will likely block your IP. For a high-traffic dashboard you would also need a proper managed database and a more powerful host than the single-file database used in the course."
+  },
+  {
+    "id": "d2ffcc91e0",
+    "course": "stock-markets-analytics",
+    "section": "Module 5. Deployment and Automation",
+    "question": "Can I use GitHub Actions to fetch data, apply an already-trained model and show buy/sell signals for the tickers I follow?",
+    "answer": "Yes. You'd adjust the code slightly - it currently drops rows with unfilled data and doesn't predict the last one-to-three days - but the model can forecast one-to-three days beyond the available data, and you can add a filter to show a specific stock's prediction."
+  },
+  {
+    "id": "604eb2ddda",
+    "course": "stock-markets-analytics",
+    "section": "Module 5. Deployment and Automation",
+    "question": "How do I run the model live against real market data instead of a pre-calculated dataset?",
+    "answer": "That's the end goal and your capstone: instead of loading a pre-built dataframe, call the APIs daily, join the stats into your tables (optionally saving incrementally to a database), and run it each day to predict the future. You then place those predictions on your trading platform manually or automatically via API."
+  },
+  {
+    "id": "073d66b2ab",
+    "course": "stock-markets-analytics",
+    "section": "Module 5. Deployment and Automation",
+    "question": "Does the course use real-time or streaming market data?",
+    "answer": "No. It uses historical or 15-minute-delayed data and effectively does day trading, generating predictions once per day. Real-time/streaming feeds usually cost money (roughly $50/month), and the goal is to keep the course free - but everything taught also works on real-time data if you choose to pay for it in your own project."
+  },
+  {
+    "id": "f44e28e6cf",
+    "course": "stock-markets-analytics",
+    "section": "Module 5. Deployment and Automation",
+    "question": "Will the course teach how to connect to a broker's API and place trades automatically?",
+    "answer": "Not at this time. The current setup produces a list of tickers the algorithm suggests buying, and you enter the trades manually. A fully automated bot would need roughly five more lectures on top of the existing five."
+  },
+  {
+    "id": "3b6da7bd1e",
+    "course": "stock-markets-analytics",
+    "section": "Module 5. Deployment and Automation",
+    "question": "Is the instructor available for proprietary trading, or is there a paid product?",
+    "answer": "Not currently - he isn't a hedge fund and has no legal structure for that. He's planning a subscription SaaS product, initially focused on explainability signals showing which features matter most for a given stock and period."
+  },
+  {
+    "id": "1212d1d22c",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "Is a machine learning model required for the capstone project?",
+    "answer": "It is highly recommended to include at least one model - ML, statistical, or time-series - since it is in the minimal requirements. You can reuse the code from the Colab notebooks or the Module 5 automated project to satisfy the requirement, and even use a non-ML rule as your best prediction alongside it."
+  },
+  {
+    "id": "955a54845c",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "How many tickers should my project use?",
+    "answer": "There is no minimum, but use at least 10-20 (or more) so that you do not overfit to a single company."
+  },
+  {
+    "id": "62e00a7ee9",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "Can I do my project on crypto instead of stocks?",
+    "answer": "Yes. See the PythonInvest crypto article and its code for technical indicators on crypto. Having fewer than 1 million rows is fine (the data size is only worth 1 point), and you can add more assets (for example 50 crypto assets) to grow the dataset. If you trade on a specific exchange, consider using that exchange's API instead of Yahoo Finance."
+  },
+  {
+    "id": "c20489821c",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "Can I reuse this project for the MLOps Zoomcamp, or use methods like reinforcement learning?",
+    "answer": "Yes - you can reuse a project across courses as long as each course's evaluation criteria are met (for MLOps you would add the missing MLOps parts). Alternative methods such as reinforcement learning are welcome; just compare them with the standard approach so you do not lose points on sections like the trading simulation."
+  },
+  {
+    "id": "329deb18ff",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "The capstone ideas I brainstormed in homework 1 - am I locked into them, or can I change my project later?",
+    "answer": "They're not binding. Generating ideas early just gets you thinking; you'll learn new things throughout the course, so your project scope can evolve or you can switch ideas entirely."
+  },
+  {
+    "id": "c1a79839bb",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "Is the project solo, or can I work in a group?",
+    "answer": "Projects are solo with peer review, since that scales better. You can collaborate at the idea level and get help in Slack, but the code must be your own."
+  },
+  {
+    "id": "31dd7a89a3",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "Can I finish early and get my certificate sooner?",
+    "answer": "You can do your own research and work ahead, but there's a fixed timeline because projects are peer-reviewed: everyone submits by a set date, then reviews happen together in an open week. You can't get the certificate until you submit and complete your peer reviews."
+  },
+  {
+    "id": "c843c4c541",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "Can I start working on my project right away?",
+    "answer": "Yes - the instructor recommends starting immediately, since completing the project is the most important outcome of the course."
+  },
+  {
+    "id": "dfa4b40a1f",
+    "course": "stock-markets-analytics",
+    "section": "Projects",
+    "question": "Can I use generative AI for the capstone project?",
+    "answer": "Yes. It builds a baseline quickly and lowers the barrier with unfamiliar libraries, but don't lean on it too hard - it tends to produce nonsense when optimizing ML models or improving prediction quality, and wiring all the pieces together still takes your own work."
+  }
+]

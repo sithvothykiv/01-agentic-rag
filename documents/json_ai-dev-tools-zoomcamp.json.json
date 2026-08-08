@@ -1,0 +1,289 @@
+[
+  {
+    "id": "4487db3924",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "How do I access the course modules and materials?",
+    "answer": "All course materials are in the GitHub repo. Each module has its own folder (e.g. `01-overview`, `03-mcp`), and cohort-specific homework is under the `cohorts/` folder.\n\nLectures are pre-recorded and available in the YouTube playlist. New workshops or updated videos are announced on Slack and Telegram. If you don't see an announcement, assume everything you need is already there.\n\nEach homework has a strict deadline listed on the schedule; after the deadline the form closes. Submissions appear on the leaderboard. You can earn extra points by sharing your learning publicly with the hashtag #aidevtools and tagging Alexey Grigorev or DataTalksClub."
+  },
+  {
+    "id": "d8385e12f6",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "Are the sessions live or recorded?",
+    "answer": "Lectures are pre-recorded and available in the YouTube playlist. New workshops or updated videos are announced on Slack and Telegram.\n\nLive sessions are primarily for Q&A and are announced separately - there is no regular schedule for them. When a live session takes place, the recording is posted on [YouTube](https://www.youtube.com/@DataTalksClub)."
+  },
+  {
+    "id": "aa60306bc2",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "Where do I submit the homework?",
+    "answer": "Instructions and the submission form are on GitHub. You can update your submission until the deadline."
+  },
+  {
+    "id": "b5d37f88b6",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "How are homework assignments scored?",
+    "answer": "Homework grade = points for the questions + 1 point for the FAQ + up to 7 points for learning in public.\n\n- Learning in public: up to 7 points, depending on how many platforms you shared your post on (e.g. LinkedIn, X, blog) and the quality of the post.\n- FAQ: 1 point. To get it, contribute to the FAQ repo and add the link to your PR in your homework submission.\n\nOptional questions are scored too - read the submission form carefully. The homework is for practice and does not affect your certificate. If you think you weren't graded, log in to check your results or search for your name on the leaderboard."
+  },
+  {
+    "id": "2922f2a648",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "How do I create a GitHub repository to submit my homework?",
+    "answer": "You'll create a repo on GitHub, connect your local folder to it, push your code, and submit the repo link. You need Git installed and a GitHub account.\n\n1. Create a folder (e.g. `ai-dev-tools`) and put your homework files inside.\n2. On github.com, create a new public repo (skip README/license for now) and click \"Create repository\".\n3. In a terminal, move into your folder and run:\n   ```\n   git init\n   git remote add origin https://github.com/USERNAME/ai-dev-tools.git\n   git remote -v\n   ```\n4. Add and commit your files:\n   ```\n   git add .\n   git commit -m \"Add homework for module 1\"\n   ```\n5. Push and set tracking:\n   ```\n   git push -u origin main\n   ```\n   Future updates are just `git add .` / `git commit -m \"...\"` / `git push`.\n6. Open your repo page on GitHub, copy the URL, and paste it into the homework submission form."
+  },
+  {
+    "id": "833fbaa15f",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "What are the prerequisites and system requirements for this course?",
+    "answer": "You don't need any previous experience with AI tools. A basic ability to program (Python, JavaScript, or similar) is enough to follow the materials and complete the projects."
+  },
+  {
+    "id": "73ed660aa5",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "Am I too late to join the course?",
+    "answer": "No. You're only late for submitting the first couple of homeworks, and they aren't required for the certificate. To earn the certificate you need to pass a project and evaluate 3 of your peers' projects, and that part starts later in the course."
+  },
+  {
+    "id": "09d4e6901b",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "Which free AI tools can I use for the course?",
+    "answer": "You can complete the course on free or low-cost tools:\n\n- Module 1: free tools like Groq or Gemini.\n- Module 2: Cursor or GitHub Copilot (pro free trial possible).\n- Module 4: a small API deposit (~$5) for OpenAI/Anthropic.\n- Other free alternatives are shared on Slack (e.g. Qoder, Kilo Code, Antigravity)."
+  },
+  {
+    "id": "6c0585d1db",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "Does this course cover AI engineering topics like LangChain, vector databases, or RAG?",
+    "answer": "No. This course is about using AI dev tools to be a more productive developer, not about building LLM applications. LangChain/LangGraph, vector databases, retrieval, and reranking are AI engineering topics - those are covered in the free [LLM Zoomcamp](https://github.com/DataTalksClub/llm). The only overlap is Module 4, where you build a coding agent to understand how these tools work under the hood."
+  },
+  {
+    "id": "a5a4d71a42",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "If AI writes the code, do I still need to understand it, and will I lose my coding skills?",
+    "answer": "Yes, you still need to understand the code. With AI tools your job shifts from writing code to reading, reviewing, and improving it - and you're the one who will maintain it, so you need to follow what's happening. The way to keep your skills sharp is to stick to core engineering practices: write tests, commit to git regularly, keep documentation, and ask the assistant to explain code you don't follow. Vibe coding (just accepting whatever works) is fine up to a point, but it breaks down once the codebase grows or something stops working."
+  },
+  {
+    "id": "310a39c0f9",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "Can I take the course on a locked-down work laptop without admin rights?",
+    "answer": "Yes. Use GitHub Codespaces - you only need a modern browser (or VS Code) and an internet connection, and you can install whatever you need inside the Codespace. GitHub Copilot and OpenAI Codex both work in Codespaces. The free tier is usually generous enough for the course."
+  },
+  {
+    "id": "e33eace6a3",
+    "course": "ai-dev-tools",
+    "section": "General Course-Related Questions",
+    "question": "Will the course teach debugging AI-generated code or prompt engineering to avoid hallucinations?",
+    "answer": "There's no dedicated module for either, but you'll pick them up in practice. AI-generated code isn't guaranteed to work, so you learn to debug it as you go - and the course's engineering practices (writing tests, committing to git) surface broken or hallucinated code for you. For example, when a model invents a method that doesn't exist, a failing test makes it fix it. You can also ask the assistant to debug a specific error, or paste in the correct docs when it uses an outdated API. Deep prompt engineering is more of an LLM Zoomcamp topic."
+  },
+  {
+    "id": "22ed5b656b",
+    "course": "ai-dev-tools",
+    "section": "Module 1. Introduction to Vibe Coding / AI Tools Overview",
+    "question": "Can I use Codex, Gemini CLI, or another assistant instead of Cursor or GitHub Copilot?",
+    "answer": "Yes. The course works with many coding assistants, so use what you're comfortable with. Codex has similar functionality to Copilot and Cursor, and people use it alongside them. Gemini CLI is a good free alternative - it works fine for Module 4, and you can use it in Module 2 instead of a paid Cursor/Copilot subscription. Antigravity is another free option."
+  },
+  {
+    "id": "96fced446d",
+    "course": "ai-dev-tools",
+    "section": "Module 1. Introduction to Vibe Coding / AI Tools Overview",
+    "question": "Is there an IDE with unlimited access to coding agents, and how do I deal with quota limits?",
+    "answer": "There's no truly unlimited option - free tiers (Antigravity, Gemini CLI) hit quota limits and you may have to wait hours or switch models. To manage it:\n\n- Track usage (`/stats` in CLIs, quota-tracker extensions in Antigravity).\n- Use Cursor's \"auto mode\" so you don't burn a specific model's limit.\n- Toggle between tools (Cursor, Antigravity, Claude Code).\n- Pay as you go with a small budget for Claude or GPT, or use Codex if you have a ChatGPT subscription.\n- At work, ask for a Cursor or Claude Code license."
+  },
+  {
+    "id": "c0ab443fd8",
+    "course": "ai-dev-tools",
+    "section": "Module 1. Introduction to Vibe Coding / AI Tools Overview",
+    "question": "Should I use pip or uv?",
+    "answer": "Use uv by default. When you specifically need pip, use `uv pip`."
+  },
+  {
+    "id": "83b26a6524",
+    "course": "ai-dev-tools",
+    "section": "Module 1. Introduction to Vibe Coding / AI Tools Overview",
+    "question": "How do people record their screen for the demo videos?",
+    "answer": "On macOS, use the built-in recorder with cmd+shift+5. On Windows 11, use win+shift+S. Loom is also popular for quick, shareable recordings."
+  },
+  {
+    "id": "9163d25d53",
+    "course": "ai-dev-tools",
+    "section": "Module 1. Introduction to Vibe Coding / AI Tools Overview",
+    "question": "Which assistant mode should I use - agent, edit, or ask?",
+    "answer": "For building things, use agent mode - it can plan and make changes across multiple files. Use edit mode when you only want to change a single file. Ask mode (just chatting without editing) is rarely needed for coding. Inline autocomplete is also handy, though sometimes noisy."
+  },
+  {
+    "id": "74a7ba492f",
+    "course": "ai-dev-tools",
+    "section": "Module 1. Introduction to Vibe Coding / AI Tools Overview",
+    "question": "What do I need to install for the course?",
+    "answer": "Not much, and no GPU or cloud compute. You need an editor (VS Code, or Cursor which is VS Code-based), Python (the course uses uv, which can also install Python for you on Windows), and Node.js (install it via nvm for the JavaScript parts). You do not need Android Studio or any mobile tooling unless your own project targets mobile. Installing the tools for your operating system is up to you - the course shows how to use them, not how to install them."
+  },
+  {
+    "id": "bcab9ba104",
+    "course": "ai-dev-tools",
+    "section": "Module 2. End-to-End Project (Snake)",
+    "question": "For deployment, should I use a monolith (one container) or split the frontend and backend?",
+    "answer": "Both work. A monolith (bundling the frontend build inside the backend container) is simpler to deploy, but on a free tier like Render the whole app sleeps. A split setup (static site + web service) keeps the frontend fast while the backend wakes up, but runs two instances and uses more hours. For the course either is fine - pick the monolith for simplicity unless free-tier cold starts bother you."
+  },
+  {
+    "id": "e44aaef8b7",
+    "course": "ai-dev-tools",
+    "section": "Module 2. End-to-End Project (Snake)",
+    "question": "I get CORS errors locally after building the frontend. What's going on?",
+    "answer": "This is the \"CORS trap\" with a monolith setup: if your backend disables CORS whenever it detects a `frontend/dist` folder (assuming production = same origin), a local build will fool it into blocking your localhost dev server. Don't rely on folder checks - use an explicit environment variable (e.g. `APP_ENV`) to decide prod vs dev, and configure the frontend to use relative paths (`/api`) so the production build respects the same-origin policy."
+  },
+  {
+    "id": "66fb48b8e1",
+    "course": "ai-dev-tools",
+    "section": "Module 2. End-to-End Project (Snake)",
+    "question": "Where can I find the prompts Alexey used in the videos?",
+    "answer": "They aren't documented in the repo. You can extract them yourself - paste a screenshot into ChatGPT, or run the video transcripts through a tool like NotebookLM to pull out the instructions. If you compile a list, a PR to the course repo is very welcome."
+  },
+  {
+    "id": "334ace3d48",
+    "course": "ai-dev-tools",
+    "section": "Module 2. End-to-End Project (Snake)",
+    "question": "OpenAI Codex models (e.g. gpt-5.1-codex) time out or can't be selected. Why?",
+    "answer": "Your AI coding front-end has to support OpenAI's Responses API. Non-codex models work over the older API, but the codex models need the Responses API - if the client doesn't speak it, you get timeouts. This is the same integration Alexey covers in the \"Building a Lovable Clone\" material."
+  },
+  {
+    "id": "874ef1a35f",
+    "course": "ai-dev-tools",
+    "section": "Module 3. Model-Context Protocol",
+    "question": "Module 3 (MCP) feels too hard. How should I approach it?",
+    "answer": "Don't get stuck on theory. Treat MCP simply as a plugin that gives the LLM access to external tools and knowledge it didn't have. The fastest path is to just try using it and ask your AI assistant to help you set it up. The official intro at modelcontextprotocol.io is a good short read if you want background."
+  },
+  {
+    "id": "5d70911641",
+    "course": "ai-dev-tools",
+    "section": "Module 3. Model-Context Protocol",
+    "question": "MCP Inspector shows a 'Connection Error'. Can I skip it?",
+    "answer": "Yes, you can skip MCP Inspector. As long as your editor (VS Code, Cursor, Antigravity, etc.) can connect to your MCP server, you're fine. For practice you can also write your own MCP client - see the example in [toyaikit](https://github.com/alexeygrigorev/toyaikit/blob/main/toyaikit/mcp/client.py)."
+  },
+  {
+    "id": "4a09a151e5",
+    "course": "ai-dev-tools",
+    "section": "Module 3. Model-Context Protocol",
+    "question": "How do I get an MCP server running in a Docker container to work with Antigravity?",
+    "answer": "Antigravity's MCP config lives at `~/.gemini/antigravity/mcp_config.json`. Either open the container as a dev-container, or put a `docker run ...` command in the MCP config. If you use stdio, make sure your launcher (e.g. a `.bat` file) passes input on stdin and writes to stdout. Many people find it easier to run inside a WSL VM and use \"Connect to WSL\" remote development in VS Code/Antigravity."
+  },
+  {
+    "id": "f9f3672638",
+    "course": "ai-dev-tools",
+    "section": "Module 4. Build an AI Coding Agent (Django)",
+    "question": "Do I need prior Django or Python knowledge?",
+    "answer": "No. Homework 1 is beginner-friendly, and the AI assistants guide you through each step."
+  },
+  {
+    "id": "f1b8db22ca",
+    "course": "ai-dev-tools",
+    "section": "Module 4. Build an AI Coding Agent (Django)",
+    "question": "Which Python version is compatible with Django 5.2.9?",
+    "answer": "Django 5.2.9 needs Python 3.10 or above; on older versions (3.9 or less) the server won't start.\n\nCheck your system Python version (macOS):\n```\n/usr/bin/python3 --version 2>&1\n```\nTo fix it, create and use a virtual environment with Python 3.10+:\n```\n/usr/local/bin/python3.10 -m venv .venv --clear\nsource .venv/bin/activate\n```\nThen restart the Django server."
+  },
+  {
+    "id": "dd294202bd",
+    "course": "ai-dev-tools",
+    "section": "Module 4. Build an AI Coding Agent (Django)",
+    "question": "What's a good Plan vs Act workflow, and should I switch models for planning vs coding?",
+    "answer": "You don't have to over-engineer it. With a capable model, it can plan and execute in one go. Tools like Cursor let you explicitly plan first, review the plan, then execute - but that's often redundant for everyday edits. For models, use a stronger one for big tasks and a faster/auto mode for follow-ups (Cursor's \"auto mode\" also avoids burning a specific model's usage limit). Switching models mid-task can cause context loss, so try to keep one model per task."
+  },
+  {
+    "id": "5d234ceff9",
+    "course": "ai-dev-tools",
+    "section": "Module 4. Build an AI Coding Agent (Django)",
+    "question": "How do I make the agent commit to git regularly and keep track of my prompts?",
+    "answer": "Put project rules in an `AGENTS.md` file at the repo root (see https://agents.md/) - for example a line like \"commit code to git regularly\". Most assistants read `AGENTS.md` automatically (Antigravity is a notable exception). Cursor also has Commands for repetitive instructions. To keep prompt history, save the agent's plan files (e.g. `PLAN.md` / `todo.md`) or export your chat - handy when you switch models or revert code."
+  },
+  {
+    "id": "32129ac07e",
+    "course": "ai-dev-tools",
+    "section": "Module 4. Build an AI Coding Agent (Django)",
+    "question": "Will this course teach me to build a production AI agent?",
+    "answer": "Not a full production agent. Module 4 builds a coding agent so you get intuition for how tools like Cursor and Lovable work under the hood - it's deliberately not a deep, multi-agent framework course. If you want to go deeper into building agents, see the [LLM Zoomcamp](https://github.com/DataTalksClub/llm)."
+  },
+  {
+    "id": "dfc9791d8e",
+    "course": "ai-dev-tools",
+    "section": "Module 5. AI for Testing, CI/CD & DevOps",
+    "question": "Railway can't read the port from railway.toml. How do I fix it?",
+    "answer": "Instead of relying on `railway.toml`, ask an AI assistant to create an entrypoint script that runs the app with uvicorn (rather than `fastapi run`). Example entrypoint:\n```\nexec uv run uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}\n```"
+  },
+  {
+    "id": "f85c610603",
+    "course": "ai-dev-tools",
+    "section": "Projects",
+    "question": "Why serve the frontend and backend from a single Docker container for the final project?",
+    "answer": "For production and evaluation simplicity. Serving the frontend build as static files from the backend keeps requests same-origin, avoids CORS issues, and allows true end-to-end testing with a single container. During development you can still run the frontend and backend separately for faster iteration."
+  },
+  {
+    "id": "6cee2d6fae",
+    "course": "ai-dev-tools",
+    "section": "Projects",
+    "question": "Do I have to use Python/Django for the final project, or can I use any stack?",
+    "answer": "Any stack is fine - use whatever you're comfortable with. One tip from the instructors: picking a stack you're less comfortable with is actually a great way to get value out of AI-assisted development."
+  },
+  {
+    "id": "4b00433e9a",
+    "course": "ai-dev-tools",
+    "section": "Projects",
+    "question": "Can I mix machine learning into my project?",
+    "answer": "Yes. Combining an ML component (for example an image classifier) with a frontend and backend is a perfectly good project."
+  },
+  {
+    "id": "8b96b5bb75",
+    "course": "ai-dev-tools",
+    "section": "Projects",
+    "question": "My project pulls YouTube transcripts and my IP gets blocked. Is there a workaround that isn't paid?",
+    "answer": "YouTube blocks data-center IPs, so free/data-center proxies are unreliable; residential proxies generally work but cost a little (students used webshare, oxylabs, and decodo - which has a short free trial - around $3-4/month). Since you're downloading text, not video, traffic is small and cheap. Watch out for a second source of blocks: `yt-dlp` may also need cookies. Most of the time goes into deploying behind a proxy in the cloud, so plan for it."
+  },
+  {
+    "id": "0e8d914b74",
+    "course": "ai-dev-tools",
+    "section": "Projects",
+    "question": "For a RAG-based project, is there anything better than semantic or keyword retrieval?",
+    "answer": "Start simple: plain text/keyword search is a strong baseline. Hybrid (semantic + keyword) usually gives the best quality but is more complex. If answers depend on understanding a whole conversation, agentic search can beat classic RAG - at the cost of more complexity. Begin with text search and add complexity only if you need it."
+  },
+  {
+    "id": "a980c55b89",
+    "course": "ai-dev-tools",
+    "section": "Miscellaneous",
+    "question": "What are some Claude Code tips and common fixes?",
+    "answer": "Tips:\n\n- Use `/compact` regularly to avoid losing context in long conversations.\n- Use `/clear` to start fresh while keeping project context.\n- Check conversation size with `/status`.\n- Put project rules in a `CLAUDE.md` file at the repo root.\n- Use the `--verbose` flag for debugging.\n\nCommon issues and fixes:\n\n- \"Command not found: claude\" - Claude isn't in PATH. Use `npx @anthropic-ai/claude-code` or fix your PATH.\n- Context loss / Claude becomes less capable - use `/compact` before the context gets too long.\n- Claude ignores CLAUDE.md - check the file exists (`ls -la CLAUDE.md`) and that you're in the right directory.\n- Claude writes failing tests - work TDD: have it write tests first, review them, then implement.\n- Claude forgets how to compile - keep build commands in CLAUDE.md and remind it explicitly."
+  },
+  {
+    "id": "f73287a0cb",
+    "course": "ai-dev-tools",
+    "section": "Miscellaneous",
+    "question": "How do I define rules in Antigravity?",
+    "answer": "For Antigravity, rules can be defined in the project's root directory at `.agent/rules/` as an alternative to using an `AGENTS.md` file."
+  },
+  {
+    "id": "73fd82dd6f",
+    "course": "ai-dev-tools",
+    "section": "Miscellaneous",
+    "question": "I can't sign in with Google on Antigravity. What can I do?",
+    "answer": "If authentication keeps failing - even in Chrome and after clearing the cache - the most reliable workaround is to create a temporary new Google account just for Antigravity. This often works when nothing else does."
+  },
+  {
+    "id": "e63cd5869e",
+    "course": "ai-dev-tools",
+    "section": "Miscellaneous",
+    "question": "Should I use Claude Code Skills?",
+    "answer": "Yes. Skills turn repetitive tasks into reusable workflows and are great for code review, docs generation, and testing patterns. Check out awesome-claude-skills for ready-made options."
+  },
+  {
+    "id": "656e8fb490",
+    "course": "ai-dev-tools",
+    "section": "Miscellaneous",
+    "question": "Can I make Antigravity or GitHub Copilot use the latest online documentation?",
+    "answer": "Yes, but you need to connect the agent to an online documentation service such as Context7, which provides up-to-date docs and examples. Without it, the agent may generate code based on older or outdated versions. This helps your agents produce current code and avoid hallucinations from outdated libraries."
+  }
+]
