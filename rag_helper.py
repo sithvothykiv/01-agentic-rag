@@ -25,7 +25,8 @@ class RAGBase:
         prompt_template=PROMPT_TEMPLATE,
         course='llm',
         # model='gpt-5.4-mini'
-        model='openai/gpt-oss-120b'
+        model='meta-llama/llama-prompt-guard-2-86m'
+        # model='openai/gpt-oss-120b'
     ):
         self.index = index
         self.llm_client = llm_client

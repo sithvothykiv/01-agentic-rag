@@ -5,7 +5,7 @@ from minsearch import Index
 def load_faq_data():
     documents = []
 
-    file_path = "/Users/kivsithvothy/Downloads/01-agentic-rag/documents/all_documents.json"
+    file_path = "./documents/all_documents.json"
 
     with open(file_path, 'r', encoding='utf-8') as f:
         documents = json.load(f)
