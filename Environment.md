@@ -168,7 +168,7 @@ openai_client = OpenAI(
 ## (Optional) Auto-loading .env with dirdotenv
 
 If you don't want to call `load_dotenv()` in every notebook, use
-[dirdotenv](https://github.com/alexeygrigorev/dirdotenv).
+[dirdotenv].
 
 It loads `.env` files automatically when you `cd` into a directory:
 
